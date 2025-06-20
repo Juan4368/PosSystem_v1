@@ -9,7 +9,7 @@ export interface Order
     readonly subtotal: number;
     readonly taxes: number;
     readonly total: number;
-    readonly timesstatus: OrderStatus;
+    readonly status: OrderStatus;
 }
 
 export type OrderStatus = 'Pendiente' 
