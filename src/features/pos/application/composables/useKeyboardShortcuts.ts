@@ -12,7 +12,7 @@ export function useKeyboardShortcuts() {
     if (e.key === 'F12') {
       e.preventDefault()
       if (!calculatorStore.isOpen) {
-        paymentStore.loadRemainingAmount()
+        calculatorStore.loadAmount(paymentStore.loadRemainingAmount())
         calculatorStore.open()
       }
       return
