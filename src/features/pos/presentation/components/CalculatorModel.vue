@@ -205,3 +205,16 @@ function handleAssign() {
 <style scoped>
 .calculator-grid {
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 4px;
+}
+
+.row-span-2 {
+  grid-row: span 2;
+}
+
+.col-span-2 {
+  grid-column: span 2;
+}
+</style>
