@@ -3,8 +3,8 @@ export interface Payment {
     readonly method: PaymentMethod;
     readonly amount: number;
     readonly timestamp: Date;
-    readonly reference?: string | undefined 
-    
+    readonly reference?: string;
+
 }
 
 export type PaymentMethod = 'Efectivo'| 'Cartera' | 'Transferencia' | 'other';
